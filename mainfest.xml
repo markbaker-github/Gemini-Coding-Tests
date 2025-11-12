@@ -89,7 +89,7 @@
         <bt:Image id="Icon.80x80" DefaultValue="https://placehold.co/80x80/0078D4/FFFFFF?text=SUB" />
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="~remoteAppUrl" DefaultValue="https://github.com/markbaker-github/Gemini-Coding-Tests" />
+        <bt:Url id="~remoteAppUrl" DefaultValue="https://markbaker-github.github.io/Gemini-Coding-Tests/" />
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GroupLabel" DefaultValue="Subject Add-in"/>
