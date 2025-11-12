@@ -28,7 +28,8 @@
     </Sets>
   </Requirements>
   
-  <!-- Define where the add-in runs -->
+  <!-- This <FormSettings> block is for old add-ins and conflicts with VersionOverrides. Remove it. -->
+  <!--
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
@@ -37,6 +38,7 @@
       </DesktopSettings>
     </Form>
   </FormSettings>
+  -->
 
   <!-- Permissions -->
   <Permissions>ReadItem</Permissions>
@@ -47,7 +49,7 @@
   </Rule>
 
   <!-- Modern UI (Ribbon) configuration -->
-  <mailapp:VersionOverrides xsi:type_This="VersionOverridesV1_0">
+  <mailapp:VersionOverrides xsi:type="VersionOverridesV1_0">
     <Hosts>
       <Host xsi:type="MailHost">
         <DesktopFormFactor>
