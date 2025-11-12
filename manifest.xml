@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OfficeApp
-  xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+  xmlns="http://schemas.microsoft.com/office/appforoffice/1.5"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
-  xmlns:mailapp="http://schemas.microsoft.com/office/mailappversionoverrides/1.0"
+  xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0"
   xsi:type="MailApp">
 
   <Id>a8d11559-467f-4e0d-83d3-9f4be99f57f5</Id>
@@ -16,34 +16,22 @@
   <HighResolutionIconUrl DefaultValue="https://placehold.co/128x128/000000/FFFFFF.png?text=SS"/>
   <SupportUrl DefaultValue="https://markbaker-github.github.io/Gemini-Coding-Tests/"/>
 
-  <!-- Hosts and Requirements -->
   <Hosts>
     <Host Name="Mailbox"/>
   </Hosts>
 
   <Requirements>
     <Sets>
-      <Set Name="Mailbox" MinVersion="1.1"/>
+      <Set Name="Mailbox" MinVersion="1.5"/>
     </Sets>
   </Requirements>
 
-  <!-- Version Overrides (requires schema >= 1.5) -->
-  <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides/1.0" xsi:type="VersionOverridesV1_0">
-    <Description resid="residDescription"/>
-
+  <mailappor:VersionOverrides xsi:type="VersionOverridesV1_0">
     <Permissions>ReadItem</Permissions>
-
-    <Requirements>
-      <bt:Sets DefaultMinVersion="1.1">
-        <bt:Set Name="Mailbox"/>
-      </bt:Sets>
-    </Requirements>
-
     <Hosts>
       <Host xsi:type="MailHost">
         <DesktopFormFactor>
           <FunctionFile resid="Taskpane.Url"/>
-
           <ExtensionPoint xsi:type="MessageReadCommandSurface">
             <OfficeTab id="TabDefault">
               <Group id="msgReadGroup">
@@ -67,31 +55,6 @@
             </OfficeTab>
           </ExtensionPoint>
         </DesktopFormFactor>
-
-        <WebFormFactor>
-          <ExtensionPoint xsi:type="MessageReadCommandSurface">
-            <OfficeTab id="TabDefault">
-              <Group id="msgReadGroupWeb">
-                <Label resid="GroupLabel"/>
-                <Control xsi:type="Button" id="msgReadShowSubjectButtonWeb">
-                  <Label resid="ButtonLabel"/>
-                  <Supertip>
-                    <Title resid="SupertipTitle"/>
-                    <Description resid="SupertipDescription"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon.16x16"/>
-                    <bt:Image size="32" resid="Icon.32x32"/>
-                    <bt:Image size="80" resid="Icon.80x80"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="Taskpane.Url"/>
-                  </Action>
-                </Control>
-              </Group>
-            </OfficeTab>
-          </ExtensionPoint>
-        </WebFormFactor>
       </Host>
     </Hosts>
 
@@ -105,20 +68,17 @@
         <bt:Image id="Icon.32x32" DefaultValue="https://placehold.co/32x32/000000/FFFFFF.png?text=SS"/>
         <bt:Image id="Icon.80x80" DefaultValue="https://placehold.co/80x80/000000/FFFFFF.png?text=SS"/>
       </bt:Images>
-
       <bt:Urls>
         <bt:Url id="Taskpane.Url" DefaultValue="https://markbaker-github.github.io/Gemini-Coding-Tests/taskpane.html"/>
       </bt:Urls>
-
       <bt:ShortStrings>
         <bt:String id="GroupLabel" DefaultValue="My Add-ins"/>
         <bt:String id="ButtonLabel" DefaultValue="Show Subject"/>
         <bt:String id="SupertipTitle" DefaultValue="Show Subject"/>
       </bt:ShortStrings>
-
       <bt:LongStrings>
         <bt:String id="SupertipDescription" DefaultValue="Displays the subject of the current email in a popup alert."/>
       </bt:LongStrings>
     </Resources>
-  </VersionOverrides>
+  </mailappor:VersionOverrides>
 </OfficeApp>
