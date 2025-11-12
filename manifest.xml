@@ -43,7 +43,7 @@
 
   <!-- Modern UI (Ribbon) configuration -->
   <!-- This "mailapp:" prefix is crucial for schema validation -->
-  <mailapp:VersionOverrides xsi:type="VersionOverridesV1_0">
+  <mailapp:VersionOverrides xsi:type="mailapp:VersionOverridesV1_0">
     <Hosts>
       <Host xsi:type="MailHost">
         <DesktopFormFactor>
