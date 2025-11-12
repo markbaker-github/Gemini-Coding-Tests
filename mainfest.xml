@@ -7,9 +7,9 @@
           xsi:type="MailApp">
 
   <!-- Add-in metadata -->
-  <Id>a8d11559-467f-4e0d-83d3-9f4be99f57f5</Id> <!-- e.g., 11111111-2222-3333-4444-555555555555 -->
+  <Id>a8d11559-467f-4e0d-83d3-9f4be99f57f5</Id>
   <Version>1.0.0.0</Version>
-  <ProviderName>Mark Baker</ProviderName>
+  <ProviderName>Your Name</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Show Subject Popup" />
   <Description DefaultValue="Shows the selected email's subject in a popup."/>
@@ -32,7 +32,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="~remoteAppUrl/taskpane.html"/>
+        <SourceLocation resid="Taskpane.Url"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -52,7 +52,7 @@
       <Host xsi:type="MailHost">
         <DesktopFormFactor>
           <!-- Location of the function file for commands -->
-          <FunctionFile resid="~remoteAppUrl/taskpane.html" />
+          <FunctionFile resid="Taskpane.Url" />
           
           <!-- Read Message Ribbon -->
           <ExtensionPoint xsi:type="MessageReadCommandSurface">
@@ -71,7 +71,7 @@
                     <bt:Image size="80" resid="Icon.80x80" />
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="~remoteAppUrl/taskpane.html" />
+                    <SourceLocation resid="Taskpane.Url" />
                   </Action>
                 </Control>
               </Group>
@@ -89,7 +89,7 @@
         <bt:Image id="Icon.80x80" DefaultValue="https://placehold.co/80x80/0078D4/FFFFFF?text=SUB" />
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="~remoteAppUrl" DefaultValue="https://markbaker-github.github.io/Gemini-Coding-Tests/" />
+        <bt:Url id="Taskpane.Url" DefaultValue="https://markbaker-github.github.io/Gemini-Coding-Tests/taskpane.html" />
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GroupLabel" DefaultValue="Subject Add-in"/>
