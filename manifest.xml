@@ -13,8 +13,8 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Show Subject" />
   <Description DefaultValue="Shows the subject of the selected email in a popup."/>
-  <IconUrl DefaultValue="https://placehold.co/64x64/000000/FFFFFF?text=SS"/>
-  <HighResolutionIconUrl DefaultValue="https://placehold.co/128x128/000000/FFFFFF?text=SS"/>
+  <IconUrl DefaultValue="https://placehold.co/64x64/000000/FFFFFF.png?text=SS"/>
+  <HighResolutionIconUrl DefaultValue="https://placehold.co/128x128/000000/FFFFFF.png?text=SS"/>
   
   <!-- Hosts and Requirements -->
   <Hosts>
@@ -80,9 +80,9 @@
     <!-- Resources (strings, URLs, icons) -->
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://placehold.co/16x16/000000/FFFFFF?text=SS" />
-        <bt:Image id="Icon.32x32" DefaultValue="https://placehold.co/32x32/000000/FFFFFF?text=SS" />
-        <bt:Image id="Icon.80x80" DefaultValue="https://placehold.co/80x80/000000/FFFFFF?text=SS" />
+        <bt:Image id="Icon.16x16" DefaultValue="https://placehold.co/16x16/000000/FFFFFF.png?text=SS" />
+        <bt:Image id="Icon.32x32" DefaultValue="https://placehold.co/32x32/000000/FFFFFF.png?text=SS" />
+        <bt:Image id="Icon.80x80" DefaultValue="https://placehold.co/80x80/0S00000/FFFFFF.png?text=SS" />
       </bt:Images>
       <bt:Urls>
         <!-- This is the corrected URL pointing to your GitHub Pages file -->
