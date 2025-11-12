@@ -29,10 +29,17 @@
   <!-- Permissions -->
   <Permissions>ReadItem</Permissions>
   
-  <!-- Rule to show the add-in only on "Read" forms (when reading an email) -->
+  <!-- 
+    We are commenting out this old Rule block. 
+    It conflicts with the modern <VersionOverrides> block.
+    The <VersionOverrides> already handles activation by placing
+    the button in the "MessageReadCommandSurface".
+  -->
+  <!--
   <Rule xsi:type="RuleCollection" Mode="Or">
     <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read" />
   </Rule>
+  -->
 
   <!-- Modern UI (Ribbon) configuration -->
   <!-- This "mailapp:" prefix is crucial for schema validation -->
