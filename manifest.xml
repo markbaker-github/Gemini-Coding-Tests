@@ -15,6 +15,7 @@
   <Description DefaultValue="Shows the subject of the selected email in a popup."/>
   <IconUrl DefaultValue="https://placehold.co/64x64/000000/FFFFFF.png?text=SS"/>
   <HighResolutionIconUrl DefaultValue="https://placehold.co/128x128/000000/FFFFFF.png?text=SS"/>
+  <SupportUrl DefaultValue="https://markbaker-github.github.io/Gemini-Coding-Tests/"/>
 
   <!-- Hosts and Requirements -->
   <Hosts>
@@ -27,13 +28,11 @@
     </Sets>
   </Requirements>
 
-  <!-- Permissions -->
-  <Permissions>ReadItem</Permissions>
+  <!-- Version Overrides -->
+  <mailapp:VersionOverrides xsi:type="VersionOverridesV1_0">
 
-  <!-- Modern UI Configuration -->
-  <mailapp:VersionOverrides
-    xmlns:mailapp="http://schemas.microsoft.com/office/mailappversionoverrides/1.0"
-    xsi:type="VersionOverridesV1_0">
+    <!-- Permissions now live here -->
+    <Permissions>ReadItem</Permissions>
 
     <Requirements>
       <bt:Sets DefaultMinVersion="1.1">
@@ -128,5 +127,6 @@
         <bt:String id="SupertipDescription" DefaultValue="Displays the subject of the current email in a popup alert."/>
       </bt:LongStrings>
     </Resources>
+
   </mailapp:VersionOverrides>
 </OfficeApp>
