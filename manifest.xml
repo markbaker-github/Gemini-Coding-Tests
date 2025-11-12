@@ -47,8 +47,12 @@
     <Hosts>
       <Host xsi:type="MailHost">
         <DesktopFormFactor>
-          <!-- This points to the HTML file that loads the JavaScript for the button -->
-          <!-- We removed the <FunctionFile> tag as it's not needed for ShowTaskpane -->
+          <!-- 
+            THIS IS THE FIX:
+            We are adding the <FunctionFile> tag back in.
+            It's required by the schema to load the JavaScript.
+          -->
+          <FunctionFile resid="Taskpane.Url" />
           
           <ExtensionPoint xsi:type="MessageReadCommandSurface">
             <OfficeTab id="TabDefault">
