@@ -82,7 +82,7 @@
       <bt:Images>
         <bt:Image id="Icon.16x16" DefaultValue="https://placehold.co/16x16/000000/FFFFFF.png?text=SS" />
         <bt:Image id="Icon.32x32" DefaultValue="https://placehold.co/32x32/000000/FFFFFF.png?text=SS" />
-        <bt:Image id="Icon.80x80" DefaultValue="https://placehold.co/80x80/0S00000/FFFFFF.png?text=SS" />
+        <bt:Image id="Icon.80x80" DefaultValue="https://placehold.co/80x80/000000/FFFFFF.png?text=SS" />
       </bt:Images>
       <bt:Urls>
         <!-- This is the corrected URL pointing to your GitHub Pages file -->
